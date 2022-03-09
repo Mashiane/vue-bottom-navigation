@@ -23,7 +23,6 @@
     "start": "node server.js"
   },
   "main": "src/install.js",
-  "dependencies": {},
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -34,7 +33,9 @@
     "eslint-plugin-vue": "^6.2.2",
     "terser-webpack-plugin": "^3.0.8",
     "vue": "^2.6.14",
+    "vue-inline-svg": "^2.1.0",
     "vue-router": "^3.5.2",
+    "vue-svg-inline-loader": "^2.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

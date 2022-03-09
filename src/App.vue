@@ -35,22 +35,33 @@
     </div>
 
     <BottomNavigation
+      v-if="false"
       :options="options"
       :badge-color="badgeColor"
       :foreground-color="foregroundColor"
       v-model="selected"
     />
+    <RingBottomNavigation :options="newOptions" />
   </div>
 </template>
 
 <script>
 import BottomNavigation from "./components/BottomNavigation";
+import RingBottomNavigation from "./components/RingBottomNavigation";
 
 export default {
   name: "App",
-  components: { BottomNavigation },
+  components: { BottomNavigation, RingBottomNavigation },
   data: () => ({
     selected: 1,
+    newOptions: [
+      {
+        id: 1,
+        icon: require("./assets/icons/Trash.svg"),
+        title: "Home",
+      },
+      { id: 2, icon: require("./assets/icons/Upload.svg"), title: "Wallet" },
+    ],
     options: [
       {
         id: 1,
